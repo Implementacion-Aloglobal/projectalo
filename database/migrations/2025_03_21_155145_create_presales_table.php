@@ -17,7 +17,8 @@ return new class extends Migration {
 
 
             $table->timestamp('start_date');
-            $table->timestamp('end_date');
+            $table->timestamp('end_date')->nullable();
+
 
             $table->enum('task_type', ['Advisory', 'Feasibility', 'Support']);
             // Usuario comercial responsable (Ej: ejecutivo de ventas)
