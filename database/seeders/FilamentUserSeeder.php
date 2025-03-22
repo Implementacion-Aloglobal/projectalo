@@ -18,6 +18,7 @@ class FilamentUserSeeder extends Seeder
             'name' => 'fbarraes@aloglobal.com',
             'email' => 'fbarraes@aloglobal.com',
             'password' => Hash::make('fbarraes2025'),
+            
         ]);
 
         User::create([
@@ -49,5 +50,30 @@ class FilamentUserSeeder extends Seeder
             'email' => 'ogalaviz@aloglobal.com',
             'password' => Hash::make('ogalaviz2025'),
         ]);
+
+
+        User::create([
+            'name' => 'lfvargas@aloglobal.com',
+            'email' => 'lfvargas@aloglobal.com',
+            'password' => Hash::make('lfvargas2025'),
+        ]);
+
+
+
+
+        User::create([
+            'name' => 'mavila@aloglobal.com',
+            'email' => 'mavila@aloglobal.com',
+            'password' => Hash::make('mavila2025'),
+        ]);
+
+        User::create([
+            'name' => 'hpereira@aloglobal.com ',
+            'email' => 'hpereira@aloglobal.com',
+            'password' => Hash::make('hpereira2025'),
+        ]);
+
+
+        
     }
 }
