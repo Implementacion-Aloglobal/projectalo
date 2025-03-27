@@ -17,7 +17,7 @@ class PresaleResource extends Resource
     protected static ?string $model = Presale::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    
     public static function form(Form $form): Form
     {
         return $form
