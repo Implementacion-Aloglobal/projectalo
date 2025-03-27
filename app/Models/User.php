@@ -40,9 +40,7 @@ class User extends Authenticatable
 
     public function canAccessPanel(Panel $panel): bool
     {
-        logger('canAccessPanel ejecutado para el usuario');
-        // Lógica de acceso. Ajusta según tus necesidades.
-        return true; // Asegúrate de que 'is_admin' existe en la tabla 'users'
+        return str_ends_with($this->email, '@aloglobal.com') && $this->hasVerifiedEmail();
     }
 
     /**
